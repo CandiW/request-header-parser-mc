@@ -1,0 +1,22 @@
+{
+  "name": "request-header-parser-mc",
+  "version": "1.0.0",
+  "description": "project for free code camp",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CandiW/request-header-parser-mc.git"
+  },
+  "author": "CandiW",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CandiW/request-header-parser-mc/issues"
+  },
+  "homepage": "https://github.com/CandiW/request-header-parser-mc#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
