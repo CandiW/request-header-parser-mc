@@ -7,7 +7,7 @@ function getHeader(header){
     return JSON.stringify(header);
 }
 
-app.get('/',function(request,response){
+app.get(function(request,response){
     let header = getHeader(request.headers);
     let object = {
         ipaddress: request.ip,
