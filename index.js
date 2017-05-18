@@ -9,7 +9,7 @@ app.get('/',function(request,response){
         software: header['user-agent']
     }
     response.send(object);
-    response.send(JSON.stringify(header));
+    repsonse.send(header);
 });
 
 app.listen(process.env.PORT || 3000);
