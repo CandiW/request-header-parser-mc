@@ -6,7 +6,7 @@ app.get('/',function(request,response){
     let object = {
         ipaddress: header['x-forwarded-for'] || request.connection.remoteAddress,
         language: header['accept-language'].split(',')[0],
-        software: header['user-agent'].split('(')[1]
+        software: header['user-agent'].split('(')[1].match(/\$\d+(?=\))/g)
     }
     response.send(object);
 });
